@@ -1,1 +1,1 @@
-# javainit
+# Introdução ao Java (sem objetos)

@@ -1,4 +1,4 @@
-# Revisão Java
+# Equals, ToString e This
 
 ## .equals - comparações entre objetos, strings e lists.
 

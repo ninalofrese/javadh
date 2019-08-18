@@ -40,4 +40,4 @@ public int dividir(int dividendo, int divisor) throws ArithmeticException {
 }
 ````
 
-Mais sobre **throw** no [exercício de divisão](\src\br\digitalHouse\Ex03)
+Mais sobre **throw** no [exercício de divisão](https://github.com/ninalofrese/javadh/tree/master/exception/src/br/digitalHouse/Ex03)

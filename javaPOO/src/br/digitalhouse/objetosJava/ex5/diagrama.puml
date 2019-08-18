@@ -1,0 +1,28 @@
+@startuml
+
+class Carro{
+-marca:String
+-modelo:String
+-ano:int
+-cor: String
+-quilometragem:int
+}
+class Cliente{
+-nome:String
+-sobrenome:String
+-contato:String
+}
+class Venda{
+-valorDaVenda:double
+-veiculoVendido:Carro
+-cliente:Cliente
+}
+class Concessionaria{
++registrarVenda(Carro veiculo, Cliente cliente, double valor)
+}
+
+Concessionaria o-- Cliente
+Concessionaria o-- Carro
+Concessionaria ..|> Venda
+
+@enduml

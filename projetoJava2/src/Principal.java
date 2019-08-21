@@ -23,7 +23,7 @@ public class Principal {
         List<Integer> codigos = new ArrayList<>();
         codigos.add(2);
         codigos.add(4);
-        //livraria.ConsultarLivro(codigos);
+        livraria.ConsultarLivro(codigos);
 
 //        livraria.EfetuarVenda(2);
 //        livraria.EfetuarVenda(2);
@@ -45,6 +45,6 @@ public class Principal {
         colecao3.add(livro1);
         Colecao box3 = new Colecao(colecao3, 12, 90.0, "Esse é um box 3.");
 
-        livraria.EfetuarVenda(box2);
+        //livraria.EfetuarVenda(box2);
     }
 }

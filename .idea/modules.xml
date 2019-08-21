@@ -9,6 +9,8 @@
       <module fileurl="file://$PROJECT_DIR$/javaPOO/javaPOO.iml" filepath="$PROJECT_DIR$/javaPOO/javaPOO.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaSemObjetos/javaSemObjetos.iml" filepath="$PROJECT_DIR$/javaSemObjetos/javaSemObjetos.iml" />
       <module fileurl="file://$PROJECT_DIR$/javadh.iml" filepath="$PROJECT_DIR$/javadh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/projetoJava/projetoJava.iml" filepath="$PROJECT_DIR$/projetoJava/projetoJava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/projetoJava2/projetoJava2.iml" filepath="$PROJECT_DIR$/projetoJava2/projetoJava2.iml" />
     </modules>
   </component>
 </project>

@@ -1,0 +1,68 @@
+@startuml
+
+Professor <|-- ProfessorAdjunto
+Professor <|-- ProfessorTitular
+Curso o-- Aluno
+Curso o-- ProfessorAdjunto
+Curso o-- ProfessorTitular
+Aluno o-- Matricula
+DigitalHouseManager o-- Aluno
+DigitalHouseManager o-- Matricula
+DigitalHouseManager o-- Professor
+DigitalHouseManager o-- Curso
+
+class Aluno{
+- nome: String;
+- sobrenome: String;
+- codigoAluno: Integer;
+}
+
+class Curso{
+- nome: String
+- codigoCurso: Integer
+- titular: ProfessorTitular
+- adjunto: ProfessorAdjunto
+- maxAlunos: Integer
+- alunos: List<Aluno>
++ adicionarUmAluno(Aluno): boolean
++ excluirAluno(Aluno): void
+}
+
+abstract class Professor{
+- nome: String
+- sobrenome: String
+- tempoCasa: Integer
+- codigoProfessor: Integer
+}
+
+class ProfessorTitular{
+- especialidade: String
+}
+
+class ProfessorAdjunto{
+- horasMonitoria: Integer
+}
+
+class Matricula{
+- aluno: Aluno
+- curso: Curso
+- dataMatricula: Date
+}
+
+class DigitalHouseManager{
+- listaAlunos: List<Aluno>
+- listaProfessor: List<Professor>
+- listaCursos: List<Curso>
+- listaMatricula: List<Matricula>
++ registrarCurso(String nome, Integer codigoCurso, Integer maxAlunos):void
++ excluirCurso(Integer): void
++ registrarProfessorAjunto(String nome, String sobrenome, Integer codigoProfessor, Integer qtdeHoras): void
++ registrarProfessorTitular(String nome, String sobrenome, Integer codigoprofessor, String especialidade): void
++ excluirProfessor(Integer): void
++ matricularAluno(String nome, String sobrenome, Integer codigoAluno): void
++ matricularAluno(Integer codigoAluno, Integer codigoCurso): void
++ alocarProfessores(Integer codigoCurso, Integer codigoProfessorTitular, Integer codigoProfessorAdjunto)
++ consultarCurso(Integer codigoAluno): List<Curso>
+}
+
+@enduml

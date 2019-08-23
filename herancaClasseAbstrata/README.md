@@ -49,7 +49,12 @@ public abstract class Animal{
 - Pode ter construtor na classe abstrata, mas não pode instanciar diretamente ela, você pode sobrescrever o construtor em uma classe filha, e depois instanciar o construtor filho
 
 **Classe derivada**
-
+```
+@Override
+public void racaAnimal(String raca){
+    System.out.println(raca);
+}
+```
 
 ## Interface
 - Relacionamento: implementação

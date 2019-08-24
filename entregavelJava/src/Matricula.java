@@ -5,10 +5,10 @@ public class Matricula {
     private Curso curso;
     private Date dataMatricula;
 
-    public Matricula(Aluno aluno, Curso curso, Date dataMatricula) {
+    public Matricula(Aluno aluno, Curso curso) {
         this.aluno = aluno;
         this.curso = curso;
-        this.dataMatricula = dataMatricula;
+        this.dataMatricula = new Date();
     }
 
     public Aluno getAluno() {

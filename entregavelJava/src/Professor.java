@@ -6,6 +6,13 @@ public abstract class Professor {
     private Integer tempoCasa;
     private Integer codigoProfessor;
 
+    public Professor(String nome, String sobrenome, Integer tempoCasa, Integer codigoProfessor) {
+        this.nome = nome;
+        this.sobrenome = sobrenome;
+        this.tempoCasa = tempoCasa;
+        this.codigoProfessor = codigoProfessor;
+    }
+
     public String getNome() {
         return nome;
     }

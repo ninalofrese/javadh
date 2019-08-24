@@ -56,7 +56,7 @@ class DigitalHouseManager{
 - listaMatricula: List<Matricula>
 + registrarCurso(String nome, Integer codigoCurso, Integer maxAlunos):void
 + excluirCurso(Integer): void
-+ registrarProfessorAjunto(String nome, String sobrenome, Integer codigoProfessor, Integer qtdeHoras): void
++ registrarProfessorAdjunto(String nome, String sobrenome, Integer codigoProfessor, Integer qtdeHoras): void
 + registrarProfessorTitular(String nome, String sobrenome, Integer codigoprofessor, String especialidade): void
 + excluirProfessor(Integer): void
 + matricularAluno(String nome, String sobrenome, Integer codigoAluno): void

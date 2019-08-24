@@ -1,8 +1,8 @@
 public class ProfessorAdjunto extends Professor{
     private Integer horasMonitoria;
 
-    public ProfessorAdjunto(Integer horasMonitoria, String nome, String sobrenome, Integer codigoProfessor) {
-        //TODO super.nome = nome;
+    public ProfessorAdjunto(String nome, String sobrenome, Integer tempoCasa, Integer codigoProfessor, Integer horasMonitoria) {
+        super(nome, sobrenome, tempoCasa, codigoProfessor);
         this.horasMonitoria = horasMonitoria;
     }
 

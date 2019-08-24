@@ -7,14 +7,22 @@ public class Curso {
     private Integer codigoCurso;
     private ProfessorTitular titular;
     private ProfessorAdjunto adjunto;
+    private Integer maxAlunos;
     private List<Aluno> alunosMatriculados = new ArrayList<>();
 
-    public Curso(String nome, Integer codigoCurso, ProfessorTitular titular, ProfessorAdjunto adjunto, List<Aluno> alunosMatriculados) {
+    public Curso(String nome, Integer codigoCurso, ProfessorTitular titular, ProfessorAdjunto adjunto, Integer maxAlunos, List<Aluno> alunosMatriculados) {
         this.nome = nome;
         this.codigoCurso = codigoCurso;
         this.titular = titular;
         this.adjunto = adjunto;
+        this.maxAlunos = maxAlunos;
         this.alunosMatriculados = alunosMatriculados;
+    }
+
+    public Curso(String nome, Integer codigoCurso, Integer maxAlunos) {
+        this.nome = nome;
+        this.codigoCurso = codigoCurso;
+        this.maxAlunos = maxAlunos;
     }
 
     public String getNome() {
@@ -57,12 +65,34 @@ public class Curso {
         this.alunosMatriculados = alunosMatriculados;
     }
 
+    public Integer getMaxAlunos() {
+        return maxAlunos;
+    }
+
+    public void setMaxAlunos(Integer maxAlunos) {
+        this.maxAlunos = maxAlunos;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Curso curso = (Curso) o;
         return Objects.equals(codigoCurso, curso.codigoCurso);
+    }
+
+    public boolean adicionarUmAluno(Aluno novoAluno) {
+        if (maxAlunos - alunosMatriculados.size() > 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public void excluirAluno(Aluno aluno) {
+        if (alunosMatriculados.equals(aluno)) {
+            alunosMatriculados.remove(aluno);
+        }
     }
 
 }

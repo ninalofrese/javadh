@@ -81,8 +81,11 @@ public class Curso {
         return Objects.equals(codigoCurso, curso.codigoCurso);
     }
 
+    //Parte H - p.9
+
     public boolean adicionarUmAluno(Aluno novoAluno) {
         if (maxAlunos - alunosMatriculados.size() > 0) {
+            alunosMatriculados.add(novoAluno);
             return true;
         } else {
             return false;
@@ -95,4 +98,15 @@ public class Curso {
         }
     }
 
+    @Override
+    public String toString() {
+        return "Curso{" +
+                "nome='" + nome + '\'' +
+                ", codigoCurso=" + codigoCurso +
+                ", titular=" + titular +
+                ", adjunto=" + adjunto +
+                ", maxAlunos=" + maxAlunos +
+                ", alunosMatriculados=" + alunosMatriculados +
+                '}';
+    }
 }

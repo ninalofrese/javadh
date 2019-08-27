@@ -13,4 +13,12 @@ public class ProfessorAdjunto extends Professor{
     public void setHorasMonitoria(Integer horasMonitoria) {
         this.horasMonitoria = horasMonitoria;
     }
+
+    @Override
+    public String toString() {
+        return "ProfessorAdjunto{" +
+                "Dados Cadastrais=" + super.toString() +
+                "horasMonitoria=" + horasMonitoria +
+                '}';
+    }
 }

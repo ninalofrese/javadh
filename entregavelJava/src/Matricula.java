@@ -34,4 +34,13 @@ public class Matricula {
     public void setDataMatricula(Date dataMatricula) {
         this.dataMatricula = dataMatricula;
     }
+
+    @Override
+    public String toString() {
+        return "Matricula{" +
+                "aluno=" + aluno +
+                ", curso=" + curso +
+                ", dataMatricula=" + dataMatricula +
+                '}';
+    }
 }

@@ -43,4 +43,12 @@ public class Aluno {
         return Objects.equals(codigoAluno, aluno.codigoAluno);
     }
 
+    @Override
+    public String toString() {
+        return "Aluno{" +
+                "nome='" + nome + '\'' +
+                ", sobrenome='" + sobrenome + '\'' +
+                ", codigoAluno=" + codigoAluno +
+                '}';
+    }
 }

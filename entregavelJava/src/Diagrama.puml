@@ -6,10 +6,10 @@ Curso o-- Aluno
 Curso o-- ProfessorAdjunto
 Curso o-- ProfessorTitular
 Aluno o-- Matricula
-DigitalHouseManager o-- Aluno
-DigitalHouseManager o-- Matricula
-DigitalHouseManager o-- Professor
-DigitalHouseManager o-- Curso
+DigitalHouseManager -- Aluno
+DigitalHouseManager -- Matricula
+DigitalHouseManager -- Professor
+DigitalHouseManager -- Curso
 
 class Aluno{
 - nome: String;

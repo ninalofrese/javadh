@@ -70,8 +70,8 @@ public class DigitalHouseManager {
         }
     }
 
-    public void matricularAluno(String nome, String sobrenome, Integer codigoAluno) {
-        Aluno novoAluno = new Aluno(nome, sobrenome, codigoAluno);
+    public void matricularAluno(String nome, String sobrenome, Integer codigoAluno, Float horasDeEstudo) {
+        Aluno novoAluno = new Aluno(nome, sobrenome, codigoAluno, horasDeEstudo);
         listaAlunos.add(novoAluno);
     }
 

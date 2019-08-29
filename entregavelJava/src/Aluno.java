@@ -1,14 +1,18 @@
+import br.com.digitalhouse.Estudioso;
+
 import java.util.Objects;
 
-public class Aluno {
+public class Aluno implements Estudioso {
     private String nome;
     private String sobrenome;
     private Integer codigoAluno;
+    private Float horasDeEstudo;
 
-    public Aluno(String nome, String sobrenome, Integer codigoAluno) {
+    public Aluno(String nome, String sobrenome, Integer codigoAluno, Float horasDeEstudo) {
         this.nome = nome;
         this.sobrenome = sobrenome;
         this.codigoAluno = codigoAluno;
+        this.horasDeEstudo = horasDeEstudo;
     }
 
     public String getNome() {
@@ -35,6 +39,14 @@ public class Aluno {
         this.codigoAluno = codigoAluno;
     }
 
+    public Float getHorasDeEstudo() {
+        return horasDeEstudo;
+    }
+
+    public void setHorasDeEstudo(Float horasDeEstudo) {
+        this.horasDeEstudo = horasDeEstudo;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -50,5 +62,10 @@ public class Aluno {
                 ", sobrenome='" + sobrenome + '\'' +
                 ", codigoAluno=" + codigoAluno +
                 '}';
+    }
+
+    @Override
+    public float getNivelDeEstudo() {
+        return horasDeEstudo;
     }
 }

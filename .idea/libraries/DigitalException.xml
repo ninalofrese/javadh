@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="DigitalException">
     <CLASSES>
-      <root url="jar://$USER_HOME$/Desktop/DigitalException.jar!/" />
+      <root url="jar://$PROJECT_DIR$/entregavelJava/DigitalException.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

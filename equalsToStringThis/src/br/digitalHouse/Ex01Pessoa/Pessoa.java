@@ -1,4 +1,4 @@
-package Ex01Pessoa;
+package br.digitalHouse.Ex01Pessoa;
 
 import java.util.Objects;
 

@@ -2,7 +2,8 @@
 
 ## .equals - comparações entre objetos, strings e lists.
 
-- método nativo do Java que pode ser sobrescrito
+- método nativo do Java que pode ser sobrescrito para aplicar a própria lógica na comparação.
+
 
 ## toString - representação string de um objeto
 

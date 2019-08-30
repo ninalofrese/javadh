@@ -1,4 +1,4 @@
-package Ex01Dicionario;
+package br.digitalHouse.Ex01Dicionario;
 
 import java.util.HashMap;
 import java.util.Map;

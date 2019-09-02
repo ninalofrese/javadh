@@ -35,3 +35,14 @@ Basicamente, o contrário do HashSet\
 List<TipoValor> lista = new ArrayList<>();
 ```
 
+**Boxing**
+
+É o processo de conversão de um objeto tipo valor (primitivo) para um objeto tipo referência (wrapper)
+
+```
+int x = 20;
+Object obj = x;
+//Ao invés de alocar o valor em um espaço na memória stack, ele copia o valor para um espaço na memória heap e referencia no obj no stack.
+```
+
+Existe o processo contrário, chamado de **unboxing**, que precisa de cast para converter um tipo objeto para tipo int (no caso do exemplo).

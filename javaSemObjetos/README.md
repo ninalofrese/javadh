@@ -19,7 +19,7 @@ Integer, Float, Double, String, Character, Boolean
 ### Classes BigDecimal e BigInteger
 O Java não é uma linguagem feita para ter precisão em cálculos de números decimais. 
 
-**BigDecimal**
+**BigDecimal**\
 Usar `float` ou `double` quando precisa de precisão decimal em cálculos não é a melhor forma. Neste caso, usa-se `BigDecimal`.
 
 ```
@@ -33,5 +33,5 @@ BigDecimal _c = _b.subtract(_a);
 sout(_c);
 ```
 
-**BigInteger**
-Mesmo o `long` pode não ser o suficiente p ara o número de dígitos que precisa para calcular.
+**BigInteger**\
+Mesmo o `long` pode não ser o suficiente para o número de dígitos que precisa para calcular. O BigInteger é utilizado para quando tem necessidade de precisão em cálculos de números inteiros.

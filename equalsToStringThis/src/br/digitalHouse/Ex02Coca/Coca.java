@@ -1,4 +1,6 @@
-package Ex02Coca;
+package br.digitalHouse.Ex02Coca;
+
+import java.util.Objects;
 
 public class Coca {
     private Integer tamanho;
@@ -26,15 +28,11 @@ public class Coca {
     }
 
     @Override
-    public boolean equals(Object outraCoca) {
-        if (this == outraCoca){
-            return true;
-        }
-
-        if(!(outraCoca instanceof Coca)){
-            return false;
-        }
-
-        return this.tamanho == ((Coca) outraCoca).getTamanho();
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Coca coca = (Coca) o;
+        return Objects.equals(tamanho, coca.tamanho);
     }
+
 }

@@ -35,18 +35,4 @@ public class Pessoa {
         return Objects.equals(getRg(), pessoa.getRg());
     }
 
-    //    @Override
-//    public boolean equals(Object outraPessoa) {
-//
-//        if (this == outraPessoa){
-//            return true;
-//        }
-//
-//        if(!(outraPessoa instanceof Pessoa)){
-//            return false;
-//        }
-//
-//        return this.rg == ((Pessoa) outraPessoa).getRg();
-//
-//    }
 }

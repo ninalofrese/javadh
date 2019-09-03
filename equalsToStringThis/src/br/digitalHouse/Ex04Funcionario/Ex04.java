@@ -17,8 +17,5 @@ public class Ex04 {
         System.out.println(novoFuncionario.getNome() + " está na lista? " + quadroFuncionarios.contains(novoFuncionario));
         //false antes do override, true depois do override
 
-        System.out.println(novoFuncionario.getNome() + " está na lista? " + quadroFuncionarios.equals(novoFuncionario));
-        //false com equals
-
     }
 }

@@ -1,5 +1,7 @@
 # Collection em java
 
+[Apostila de collections da Caelum](https://www.caelum.com.br/apostila-java-orientacao-objetos/collections-framework/)
+
 - as listas só aceitam tipo de dados wrapper: Integer, Double, String... não pode ser primitivo
 
 ### Hashset

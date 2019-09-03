@@ -10,6 +10,8 @@
 
 #protegido é muito utilizado em caso de herança
 
+[tabela sobre visibilidade](https://github.com/ninalofrese/javadh/blob/master/javaPOO/README.md#visibilidade-de-variáveis-herdadas)
+
 **Sobrescrita (Overriding)** de método não muda a assinatura do método, só a implementação lógica
 Usado em casos de interface, classe abstrata e herança, em casos de polimorfismo
 
@@ -32,6 +34,12 @@ public Cachorro(String nomeDoAnimal){
 
 ```
 public abstract class Animal {
+```
+
+**Classe concreta derivada**
+
+```
+public class Cachorro extends Animal{
 ```
 
 ### Métodos abstratos

@@ -29,3 +29,7 @@ obj1.equals(obj2);
 this.raca = raca (parâmetro);
 significa Animal.raca = raca;
 ```
+
+## hashCode
+
+É muito utilizado quando se tem que buscar em um grande banco de dados, ao invés do .equals ou .contains. Cada valor é convertido para um número,  e se tiver o mesmo valor, esse código será igual. A precisão de correspondência desse código com o valor é muito grande, mas pode ser que ele dê um falso positivo, então, depois de encontrar pelo hashCode, confirma-se se o objeto é o mesmo pelo .equals (que busca de forma mais lenta). 

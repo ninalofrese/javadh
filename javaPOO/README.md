@@ -1,5 +1,13 @@
 # Java com Objetos (Paradigma Orientado a Objetos)
 
+Antes de qualquer coisa, algumas coisas sobre o paradigma de orientação a objetos:
+
+O que realmente diferencia programas OO de outros é o polimorfismo, e o mecanismo de polimorfismo não deve criar uma dependência no código do que chama para o que é chamado. Exemplo: `f(o)` parece ter uma dependência da função f. É possível inferir isso porque inferimos que só existe um f, então o que chama, neste caso, deve conhecer o que foi chamado. Mas se pensarmos na expressão `o.f()`, inferimos algo diferente. Sabemos que deve existir várias implementações de f, e não sabemos exatamente quais dessas funções f serão chamadas. Por isso é que a última expressão não tem uma dependência da função que está sendo chamada.
+
+Em termos concretos, isso significa que os módulos que contém chamadas polimórficas não devem referenciar, de forma alguma, módulos que contém implementação dessas funções. Não pode ter `include` ou `use` ou `require`, ou nenhuma outra declaração que faça com que um arquivo dependa de outro.
+
+> A definição de OO é: a técnica de usar polimorfismo dinâmico para chamar funções sem o código do chamador dependendo do código do que chamou.
+
 ## Gets e sets
 são a forma de pedir as informações em atributos private ou protected.
 para atribuir valor para atributos encapsulados, precisa usar get e sets.
@@ -47,4 +55,6 @@ O **protected** deixa visível para outras classes e subclasses que pertencem ao
 | Pacotes diferentes (subclasses)  | Não  | Não  | Sim  | Sim  |
 | Pacotes diferentes (sem subclasses)  | Não  | Não  | Não  | Sim  |
 
+***
 
+[Functional Programming vs. Object Oriented Programming](https://blog.cleancoder.com/uncle-bob/2018/04/13/FPvsOO.html)

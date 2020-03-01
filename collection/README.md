@@ -48,3 +48,5 @@ Object obj = x;
 ```
 
 Existe o processo contrário, chamado de **unboxing**, que precisa de cast para converter um tipo objeto para tipo int (no caso do exemplo).
+
+![](collections.png)

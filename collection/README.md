@@ -1,4 +1,4 @@
-# Collection em java
+# Collections em java
 
 [Apostila de collections da Caelum](https://www.caelum.com.br/apostila-java-orientacao-objetos/collections-framework/)
 

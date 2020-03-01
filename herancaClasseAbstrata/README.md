@@ -68,13 +68,15 @@ public void racaAnimal(String raca){
 - Relacionamento: implementação
 - cria um contrato e, a classe que implementa precisa sobrescrever todos os métodos.
 - sem atributos
-- os métodos de uma interface não tem implementação lógica, precisa ser sobrescrito
+- os métodos de uma interface não tem implementação lógica, precisa ser sobrescrito (antes do Java8)
 - intermedia a comunicação
 
 **Quando usar**
 - é melhor que tenha várias interfaces com um único método
 - é utilizado quando uma classe precisa de dois "pais". Não dá pra ser uma classe abstrata porque seria herança múltipla, então se cria uma interface para isso
 - é uma alternativa para classe abstrata no caso de métodos que não seriam aplicados para todos os filhos de uma classe abstrata.
+
+> **A partir do Java 8, os métodos das interfaces podem ter implementação lógica por padrão.**
 
 Interface
 
